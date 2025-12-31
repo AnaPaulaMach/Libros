@@ -1,1 +1,12 @@
+1 : Introduccion a los Algoritmos
+Busqueda Binaria: 
+  Entrada: Lista ordenada de elementos
+  Explicacion: Por ejemplo en una lista de numeros es ir diciendo si es muy bajo o muy alto el numero en relacion con al que se compara. O(Log n)
+
+La notacion Big O informa que tan rapido es un algoritmo, no muestra el tiempo en segundos sino en cantidad de operaciones.
+O(n), n seria el numero de operaciones (cantidad de numeros o logaritmos). Es big O pq es como una O que abraza la cantidad de operaciones.
+Esta establece el tiempo de ejecuscion para el peor caso
+O(log n): Tiempo logaritmico ; O(n): Tiempo linear ; Mas en pagina 34.
+
+
 
