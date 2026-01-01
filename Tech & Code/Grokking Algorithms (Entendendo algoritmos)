@@ -9,4 +9,17 @@ Esta establece el tiempo de ejecuscion para el peor caso
 O(log n): Tiempo logaritmico ; O(n): Tiempo linear ; Mas en pagina 34.
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+2 : Ordenacion por Seleccion
+Arreglos: Los items tienen que estar todos en espacios continuos de memoria y si faltan espacios se tienen que mover toodos.
+    Ventajas: Los items tienen una direccion 
+    Lectura O(1) {tiempo constante} ; Insercion O(n) {tiempo lineal}
 
+Listas: Los item pueden esta en cualquier lugar de la memoria.
+    Ventajas: Se pueden aniadir items de forma ilimitada ; Mejor si quiero insertar/elimianr un elemento entre elementos;
+    Desventajas: Para llegar a un item hay que pasar por todos los anteriores ; 
+    Insercion O(1) {tiempo constante} ; Lectura O(n) {tiempo lineal}
+
+Ordenamiento por seleccion:
+Es basicamente ver la lista/array entera y elegir el mas grande y sacrlo. Despues con los que quedan lo mismo.
+Es O(n*n) a pesar de que el tamanio de la lista vaya disminuyendo.
