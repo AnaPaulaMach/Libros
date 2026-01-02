@@ -1,3 +1,7 @@
+Opinion:
+
+*********************************************************************************************************************************************************************************************************************************
+
 1 : Introduccion a los Algoritmos
 Busqueda Binaria: 
   Entrada: Lista ordenada de elementos
@@ -9,7 +13,7 @@ Esta establece el tiempo de ejecuscion para el peor caso
 O(log n): Tiempo logaritmico ; O(n): Tiempo linear ; Mas en pagina 34.
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2 : Ordenacion por Seleccion
 Arreglos: Los items tienen que estar todos en espacios continuos de memoria y si faltan espacios se tienen que mover toodos.
     Ventajas: Los items tienen una direccion 
@@ -23,3 +27,51 @@ Listas: Los item pueden esta en cualquier lugar de la memoria.
 Ordenamiento por seleccion:
 Es basicamente ver la lista/array entera y elegir el mas grande y sacrlo. Despues con los que quedan lo mismo.
 Es O(n*n) a pesar de que el tamanio de la lista vaya disminuyendo.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3 : Recursion
+Caso Base: Cuando la recursion debe parar, a diferencia del Caso Recursivo que es el que vuelve a realizarse
+
+Pila: Push (agregar elemento) ; Pop (remover elemento) ; 
+
+Pila de Llamada (Call Stack): Cada vez que una funcion convoca a otra (funcion2), apila funcion2 sobre funcion y una vez que funcion2 termina (que tambien puede tener funciones adentro) vuelve a funcion sin nada apilado
+y puede volver a apilar otra (Pag. 63). La funcion en la cima es donde se encuentra actualmente
+
+Leigh Caldwel: "Los loops pueden mejorar el desempenio de su programa. La recursion mejora el desempenio de su programador. Elija la que fuese mas importante para su situacion"
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4 : Quicksort (Metodo de Ordenacion)
+Dividir para conquistar
+  - Primero se debe descubrir el caso base (el mas simple posible)
+  - Despues dividir el problema para que sea el caso base
+
+Quicksort
+  -
+
+Notacion Big O
+   A pesar que no consideramos las constantes a veces estas pueden hacer la diferencia. Por eso por mas que en la notacion se hable del peor caso tambien podemos hablar de casos promedios que serian menores a ese
+
+Caso Medio vs Peor Caso
+  - El desempenio de quicksort depende del pivot elegido
+  - Lo mejor es elegir un caso random como pivot, porque si se elige siempre el primero no se garantiza que el tiempo sea el menor (va el otro tampoco pero el libro dice que es lo mejor)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
