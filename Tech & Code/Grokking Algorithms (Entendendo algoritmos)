@@ -58,12 +58,44 @@ Caso Medio vs Peor Caso
   - Lo mejor es elegir un caso random como pivot, porque si se elige siempre el primero no se garantiza que el tiempo sea el menor (va el otro tampoco pero el libro dice que es lo mejor)
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5 : Tablas Hash - Diccionarios
+Es una funcion en la cual se inserta un string y despues de eso la funcion retorna un numero
+  - Debe ser consistente (siempre devolver lo mismo)
+  - Para cada string devuelve distintas posiciones de indice   
+  - Se usan para mapear item con relacion a otro, buscar algo.
+  - En pythonL dict() o {}
+  - Ejercucion O(1)
+  - Son tan rapidas como los arrays para la busqueda y como las listas para la insercion y remover
+  - Factor de carga: mide cuantos espacios continuan vacios en la tabla hash. Tiene que ser menor a 1. Se recomienda redimencionar cuando el factor de carga sea mayor a 0.7
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6 : Busqueda en Anchura (BFS)
+Permite encontrar el menor camino entre dos objetos
+
+Grafo
+  - Es un conjunto de conexiones compuesto por vertices y aristas.
+
+Busqueda en lo ancho
+2 preguntas
+  - Existe un camino entre A y B? Una vez que ya se sabe esta respuesta se pasa a la siguiente
+  - Cual es el camino minimo entre A y B?
+
+Fila  
+  - Estructura de datos que funciona como una fila en la vida real
+  - Operaciones: Enqueue y Dequeue
+
+Implementacion del Grafo
+  - Usando una tabla hash con vectores
+  - Si el grafo no es direccionado o direccionado hace la diferencia
+  - Siempre que se busque verificar algo intene no verificarlo dos veces porque esto puede causar un loop infinito
+
+Arbol
+  -Tipo especial de grafo en el que una arista nunca apunta de vuelta
 
 
-
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
