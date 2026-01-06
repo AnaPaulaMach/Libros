@@ -96,6 +96,17 @@ Arbol
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7 : Algoritmo de Dijkstra
+  1. Se busca el vertice mas barato (de los que alcance actualmente)
+  2. Verificar si existe un camino mas barato para los vecinos
+  3. Repetir hasta haberlo hecho para cada vertice del grafo
+  4. Calcule el camino final
+
+Grafo Ponderado: el que tiene pesos -> Algoritmo Dijktra (Busca el de menor peso)
+Grafo No Ponderado: no tiene pesos -> Busqueda en Anchura (Busca el camino mas corto)
+
+  - No se puede usar el Algoritmo de Dijkstra con valores negativos -> Algoritmo de Bellman-Ford
+
 
 
 
