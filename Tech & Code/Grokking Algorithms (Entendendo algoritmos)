@@ -108,6 +108,25 @@ Grafo No Ponderado: no tiene pesos -> Busqueda en Anchura (Busca el camino mas c
   - No se puede usar el Algoritmo de Dijkstra con valores negativos -> Algoritmo de Bellman-Ford
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8 : Algoritmos Gulosos (greedy)
+  - Optimizan localmente con la esperanza de encontrar la solucion global mas optima
+  - Son falices de escribir y tienen tiempo de ejecucion bajo por lo tanto son buenos algoritmos de aproximacion.
+Para um algoritmo ser considerado guloso (greedy), ele deve seguir uma regra de ouro: em cada etapa,
+ele faz a escolha que parece ser a melhor naquele momento exato, sem nunca reconsiderar essa decisão ou olhar para o problema de forma global.
+
+Caracteristicas de Problemas NP-Completos
+  - No tienen una solucion rapida
+  - En caso de tener uno lo mejor es usar un Algoritmo de Aproximacion
+
+No son faciles de identificar pero algunos indicativos pueden ser
+  - El algoritmo es rapido para pocos items pero lento para muchos
+  - Dice "Todas las combinaciones de X"
+  - Hay que calcular "Cada version posible de X" porque no se puede dividir en subproblemas menores
+  - Envuelve una secuencia o un conjunto
+
+Algoritmo de Aproximacion
+  - No me quedo claro pero supongo que es elegir primero el que mas se adapte a lo que yo quiero (mas cosas, menor precio) y a partir de eso seguir eligiendo
 
 
 
