@@ -146,6 +146,37 @@ Algoritmo de Feynman
   3. Escribir la solucion
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10 : K-vecinos mas proximos
+  - Se puede usar para clasificar algo segun que sean la mayoria de sus vecinos
+  - Mientras mas vecinos se tengan en cuenta menos tendencioso sera el resultado. O sea no se influenciaria tanto de cada vecino
+
+Similaridad entre conjuntos
+  - Se calcula usando el Teorema de pitagoras para calcular la distancia entre 2 puntos. Tambien se puede usar la Similaridade de cosseno
+
+Regresion
+  - Intenta adivinar un valor con la informacion disponible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
