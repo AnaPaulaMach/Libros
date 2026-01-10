@@ -1,4 +1,5 @@
-Opinion:
+Opinion: Sirve como un repaso de los algoritmos vistos en la universidad sin tanto detalle pero brindando una mejor forma de explicarlos o entenderlos. No es para nada una lectura obligatoria si ya conoces sobre los fundamentos
+pero esta buena porque es corta y muy facil de leer. Lo recomendaria para alguien que tiene que dar clases.
 
 *********************************************************************************************************************************************************************************************************************************
 
@@ -156,6 +157,19 @@ Similaridad entre conjuntos
 
 Regresion
   - Intenta adivinar un valor con la informacion disponible
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11 : Proximos Pasos
+Buscar info sobre:
+  - Arbol B, Red-black tree, heaps, Arboles splay
+  - Indice invertido en herramientas de busqueda
+  - Transformada de Fourier es util para MP3, terremtotos, ADN, Shazam
+  - Algoritmos Paralelos
+  - MapReduce
+  - Filtros de Bloom y HyperLogLog para rastrear sitios maliciosos
+  - SimHash para detectar duplicados
+  - Algortimo Simplex para programacion lineal
 
 
 
