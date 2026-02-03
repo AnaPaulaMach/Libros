@@ -2,7 +2,7 @@ Autor: Chip Huyen
 
 Opinion:
 
-********************************************************************************************************
+************************************************************************************************************************************************************************************************************************************************************************************************************
 
 1 : Vision General de los Sistemas de Machine Learning
 Habla que en investigaciones los datos son estructurados y con peculariedades conocidas pero en produccion no y pueden ser inclusive tendenciosos
@@ -17,7 +17,7 @@ Me gusta la comparacion del microondas con la IA. Que aunque no sabemos como fun
 
 ML no puede resolver todos los problemas, pero si parte de los mismos.
 
---------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2 : Introduccion al Disenio de Sistemas de Machine Learning
 Hay que tener un equilibrio entre las metricas tecnicas de ML y las de negocios
@@ -25,19 +25,21 @@ Hay que tener un equilibrio entre las metricas tecnicas de ML y las de negocios
 Los modelos de clasificacion agrupan las entradas en diferentes categorias y los de regresion les dan un valor continuo.
 De todas formas un modelo de regresion puede ser delimitado como de clasificacion y viceversa.
 
+La clasificación intenta elegir la app correcta de una lista fija (lo que te obliga a reentrenar si la lista cambia), mientras que la regresión calcula 
+el puntaje de interés para cualquier app individual basándose en sus características, permitiéndote evaluar apps nuevas sin empezar de cero.
 
 
 Upscaling: aumentar recursos para lidiar con el crecimiento
 Downscaling: reducir uso de recursos innecesarios
 Autoscaling: automatico segun el uso
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
------------------------------------------------------------------------------------------------------------------------
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
