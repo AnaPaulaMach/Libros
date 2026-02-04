@@ -1,6 +1,9 @@
 Autor: Chip Huyen
 
-Opinion:
+Opinion: 
+- Si bien yo si tengo que leer todas las secciones, la autora invita a saltear partes si ya se tiene conocimiento sobre algunos temas. Esto me parece interesante porque con otros libros me paso y me 
+  sentia mal por saltearme partes jiji.
+
 
 ************************************************************************************************************************************************************************************************************************************************************************************************************
 
@@ -35,13 +38,61 @@ Autoscaling: automatico segun el uso
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+3 : Fundamentos de Ingenieria de Datos
+ - Serializacion de datos: Proceso de conversion de una estructura de datos en un formato que pueda ser almacenado o trasmitido y reconstruido despues. (JSON, CSV, Parquet)
+    - Hay formatos orientados a linea y a columna y cada uno cuenta con sus ventajas
+      - Pandas es orientado a columnas, Numpy puede ser ambas pero por defecto a lineas
+    - Muchos se quejan de CSV y AWS recomienda Parquet. En Binario se usa menos espacio que en texto.
+    - Columnas precio medio de x cosa, Fila caracterisiticas de un elemnto
 
+ - Modelo Relacional: 
+  - Se usa SQL, aunque este puede tener linea duplicadas. Es un lenguaje declarativo.
+  - 
 
+- NoSQL: Not Only SQL
+  - Modelo Orientado a Documento: 
+    * No impone un esquema (Schemaless)
+    * No son tan eficiente en consultas como los relacionales
 
+  - Modelo Orientado a Grafo: 
+    * Las relaciones entre los items son la prioridad
+    * Algunas consultas son mas faciles en esete modelo otras en otro
+
+- Datos Estructurados vs Datos No Estructurados:
+  * D. Estructurados: Es facil de analizar pero un cambio en el esquema puede introducir problemas. Se almacenan en WareHouse
+  * D. No Estructurados: A pesar de no seguir un esquemas pueden tener patrones que ayuden a extraer estructuras. Se almacenan en Data Lake
+  * Hibrido Data Lakehouse
+
+- Procesamiento Transaccional:  
+
+- Procesamiento Analitico:
+
+- ACID vs BASE
+
+- Online (inmediatos sin intervencion humana). Nearline (No inmediatos pero sin intervencion humana). Offline (requieren intervencion humana)
+
+- Modos de DataFlow:
+  - DataFlow: como los datos pasan de un proceso a otro sin compartir memoria entre ellos. Opciones:
+    - Por Bancos de Datos: Los procesos no siempre pueden acceder a las mismas BD y escritura y lectura puede ser lenta. En lote
+    - Por Servicios usando requsiciones (request-driven): Usa una arquitectura orientada a servicios. Estructura una a aplicacion como diferentes servicios da lugar a los microservicios. REST. RPC (pag 77 interesante) 
+      - Util cuando los sistemas dependen mas de la logica que de los datos    
+    - Por un transporte en tiempo real (event-driven): Hay un Coordinador (es mas una BD o nose) o Broker. Publish-Subscribe o Message queue. De Flujo.
+      - Funcioan mejor en sistemas con grandes cantidades de datos
+
+- Procesamiento en Lote: Son procesados en barch una vez por dia o asi.
+- Procesamiento de Flujo: Tambien puede ser iniciado de forma periodica pero en periodos mas cortos.
+  * Algunas personas dicen que el procesamiento en lote es un caso especial de procesamiento en flujo
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
+
+
+
+
+
+
 Recomienda:
 Algoritmos de destruccion en masa
+Designing Data-Intensive Applications
