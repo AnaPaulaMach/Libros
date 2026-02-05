@@ -83,7 +83,48 @@ Autoscaling: automatico segun el uso
 - Procesamiento de Flujo: Tambien puede ser iniciado de forma periodica pero en periodos mas cortos.
   * Algunas personas dicen que el procesamiento en lote es un caso especial de procesamiento en flujo
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4 : Entrenando los datos
+  - Se habla de Datos de entrenamiento en lugar de Conjunto de datos dentrenamiento porque en produccion los daotos no son finitos ni estacionarios
+
+  - Muestra No probabilistica: La seleccion de datos no es basada en ningun criterio de probabilidad
+  - Muestra Aleatoria: 
+    * Puede ser aleatoria simple donde pueden aparecer outliers
+    * Puede ser estratificada pero no siempre es posible (multirotulo)
+    * Puede ser ponderada y otras...
+
+- A pesar de la promesa de que el ML iba a ser no supervisado, la mayoria de modelos de ML en produccion hoy en dia son supervisados
+
+  -  Weak Supervision: Se usan heurisitcas que son funciones que clasifican. Util para no invertir en rotulaje manual
+  -  Semisupervision: Aprovecha las suposiciones estructurales para generar nuevos rotulos en base a un pequenio conjunto de rotulos inciales.
+  -  Aprendizaje por transferencia: Reutiliza modelos usados para otras tareas (BERT, GPT-3)
+  -  Aprendizaje activo: 
+
+- Clases Desbalanceadas:
+  - En produccion los datos desbalanceados son la regla
+  - Pag. 112 interesante habla de metricas precision, F1.
+  - Hay metodos para mitigar este problema a nivel de datos
+  - Tambian hay meotodos de nivel de algortimo.
+    * ML sensible al costo: con matriz de costos
+    * Perdida balanceada de clase: penalizamos por hacer predicciones incorrectas
+    * Perdida focal: El modelo se centraria en las clases que son dificiles de clasificar
+
+- Data Augmentation:
+  - Se usa para aumentar los datos de entrenamiento. Tres tipos:
+    - Transformaciones simples de preservacion de rotulos: Es modificar una parte de una imagen o texto preservando su rotulo.
+    - Perturbacion: Alterar una imagen o un pixel conservando rotulos (un pixel puede hacer confundir redes neuronales). Bert sustituye por palabras aleatorias (en anterior eran sinonimos)
+    - Sintesis de datos: 
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
