@@ -153,8 +153,28 @@ Operaciones comunes en Ingenieira de Features
   
 
 
-Data Leakeage
+Data Leakeage (Fuga de datos)
+Ocurre cuando se utiliza accidentalmente información durante el entrenamiento del modelo que no debería estar disponible en el momento de la predicción real. Esto genera que sea muy preciso en las pruebas pero despues nop.
+Hay causas comunes, algunas son:
+ * Divide los datos correlacionados al tiempo aleatoriamente en vez de por tiempo: Al momento de dividir en entrenamiento, validacion y test. De esta forma se verian datos del "futuro".
+ * Escalone antes de dividir: Dividir los datos antes de analizarlos y escalonarlos.
+ * Rellenar los datos ausentes con estadisticas de division de test: El valor con el que se rellene tiene que ser calculado segun la division en la que esta (ej entrenamiento).
+ * Manipulacion inadecuada de la duplicacion de datos antes de la division: Hay que remover antes de dividir.
+ * Grupo de leakage: Ej fotos distintas pero tomadas con poco tiempo de diferencia en distintos grupos.
+ * Fugas a partir del proceso de generacion de datos: El riesgo se puede mitigar conociendo la fuente de los datos.
 
+ - Deteccion: Si una feature tiene un desempenio muy alto revisarla o si al eliminarla disminuye.
+
+
+Ingenieria de Buenas Features
+ En general mas features mejor desempenio (no siempre). Mientras se avanza en produccion se pueden ir agregando otras.
+ - Importancia de la Feature: Existen algoritmos ya creados para calcularla. Generalmente un pequenio num son responsables de todas las predicciones.
+ - Generalizacion de Feautres: Es menos tecnico y mas de expertise. Nos podemos guiar de dos aspectos
+    * Coberturas de features: Es el pocentaje de muestas con valor para determinada features (mientras menos valores ausente mayor cobertura). Si tiene poca cobertura pero los valores ausentes no son aleatorios oes muy certera se la usa igual.
+    * Distirbucion de valores de feautre: 
+
+---> Conclusion: La mejor forma de aprender es por medio de la experiencia probando cosas. Al final da tips 
+ 
 
 
 
