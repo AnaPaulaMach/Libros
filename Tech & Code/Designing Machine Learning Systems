@@ -1,4 +1,4 @@
-Autor: Chip Huyen
+ Autor: Chip Huyen
 
 Opinion: 
 - Si bien yo si tengo que leer todas las secciones, la autora invita a saltear partes si ya se tiene conocimiento sobre algunos temas. Esto me parece interesante porque con otros libros me paso y me 
@@ -117,15 +117,55 @@ Autoscaling: automatico segun el uso
     - Sintesis de datos: 
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5 : Ingenieria de Features
+  - n-grama: secuencia continua de n items de una determinada puestra de texto. Se usan tecnicas de procesamiento para obtenerlas (es una mas como: lematizacion, tokenizacion, etc)
+  - El aprendiazaje profundo nos simplica las cosas y solo con tokenizacion crea un vocabulario.
+
+Operaciones comunes en Ingenieira de Features
+  - Valores ausentes: hay tipos
+      * Missing not at random (MNAR): Ocurre cuando el motivo de la ausencia de un valor es el propio valor verdaero (no decir sueldo porque es mayor al promedio)
+      * Missing at random (MAR): Cuando el motivo de la ausencia del valor no se debe al valor en si pero si a otra variable observada. (Las personas del genero A no quieren decir su edad)
+      * Missing completely at random (MCAR): No hay ningun patron de ausencia del valor
+      * Alternativas: Removerlos (delete) o Rellenarlos (imput)
+        + Removerlos: Es la mas facil. Puede ser remover por columna (aunque quizas son datos importantes), Remover la linea (siempre que sean MCAR y no un porcentaje alto del toal).
+        + Rellenarlos: Con string vacio, media, mediana o moda. Si ponemos 0 cuando rellenamos no podremos diferenciar en quien realmente tiene 0 hijos o quien no lo informo.
+
+  - Escalonamiento: Para que el modelo no le de mas imprtancia a un valor que al otro poner todos los valores en intervalo [0,1]. Si la variable tiene una distribucion normal se puede
+    normalizar para que tengan media 0 y varianza unitaria = Padronizacion. Otra tecnia es la transformacion logaritmica. Tener en cuenta diferencia datos entrenamiento y datos que se usaran.
+
+  - Discretizacion: No lo encuentra util. Transformar una feautre continua en una discreta puede ser en categorias. Tambien se puede hacer con valores discretos.
+
+ -> TIENE EJEMPLO IMPORTANTE PARA MI!~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!~!~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
+- Codificacion de Features categoricas: En produccion las categorias cambian y son muchas por lo que almacenar todas con un num es imposible. La solucion es usar unsa funcion hash locality-sesitive. Que permite colisiones pero no es tan grave 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+- Feature Crossing: Combinar features y generar nuevas. Util para modelos que no pueden aprenden relaciones no lineares. Pueden sobreajustarse a los datos de entrenammiento.
+
+- Embedding posicionales discretos y continuos:
+  * Embeddings:  Es la forma de convertir una palaba o dato en un vector de numeros. Todos los generados por el mismo algoritmo son del mismo tamanio. Las palabras similares tendran vectores similares
+  * Si usamos red neuronal las palabras son procesadas en forma secuencial en cambio un transformer las palabras son procesadas en paralelo. Igual si importa el orden pq cambia el significado por eso debemos ingresar la posicion absoluta en
+    en la que esta. S
+    Embeddings posicionales (solucion): Se crea vector con posicion, se suma el embedding de la palabra con el de la posicion. Para aprender se usa seno y coseno
+    Los embeddings cambian a medida que los pesos del modelo son actualizados por eso decimos que son aprendido
+    Los embeddings tambien pueden ser continuos (Fourier features)
+  
+
+
+Data Leakeage
 
 
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
