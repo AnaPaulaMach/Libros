@@ -170,14 +170,26 @@ Ingenieria de Buenas Features
  En general mas features mejor desempenio (no siempre). Mientras se avanza en produccion se pueden ir agregando otras.
  - Importancia de la Feature: Existen algoritmos ya creados para calcularla. Generalmente un pequenio num son responsables de todas las predicciones.
  - Generalizacion de Feautres: Es menos tecnico y mas de expertise. Nos podemos guiar de dos aspectos
-    * Coberturas de features: Es el pocentaje de muestas con valor para determinada features (mientras menos valores ausente mayor cobertura). Si tiene poca cobertura pero los valores ausentes no son aleatorios oes muy certera se la usa igual.
+    * Coberturas de features: Es el pocentaje de muestas con valor para determinada features (mientras menos valores ausente mayor cobertura). Si tiene poca cobertura pero los valores ausentes no son aleatorios o es muy certera se la usa igual.
     * Distirbucion de valores de feautre: 
 
 ---> Conclusion: La mejor forma de aprender es por medio de la experiencia probando cosas. Al final da tips 
  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+6 : Desarollo de Modelos y evaluacion Offline
 
-
+Desarllo y Entrenamiento de Modelos
+Elegir el modelo adecuado
+  - Clasificacion de texto: Naive Bayes, Regresion logistica, Redes nueonales reucurrentes y modelos basados en arquitectura transofrmer (BERT-GPT)
+  - Deteccion Transacciones fraudulentas (anormalidades): k-vecinos, floresta de aislamiento, clusters y redes neuronales
+  - Tips para seleccionar modelos
+     + Evitar armas de ultima generacion: Si hay una opcion mas barata y simple preferir esa, los nuevos muchas veces estan estudiados solo en datos estaticos
+     + Comenzar con modelos mas simples: No solo de implementarlo sino de que el modelo sea simple si se desea mejorarlo
+     + Evitar biases humanos en la seleccion de modelos: Probar de forma equitativa los modelos
+     + Evaluar el buen desmpenio de ahora vs el de mas tarde: Se puede estimar con curvas de aprendizaje
+     + Evaluar los Pros y Cons: Entender que es lo mas importante (Ej: falsos positivos y falsos negativos; Interpretabilidad)
+     + Entender las Suposiciiones del modelo: Cada modelo hace sus suposiciones, lo mejor es entenderla.
 
 
 
