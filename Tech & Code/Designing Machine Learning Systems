@@ -217,11 +217,31 @@ Entrenamiento distribuido
      + Soft AutoML: Ajuste de Hipeparametros (parametros dados por usuarios): Ajustara parametros para mejorar modelo: Tener en cuenta que funcion bien para todo el modelo y no solo para una subdivison de entrenamiento. 
      + Hard AutoML: Busqueda de arquitectura y optimizador aprendido: 
 
-Cuatro fases del desarollo de un modelo de ML:
- 1. Antes del ML : 
- 2. Modelos de ML mas simples:
- 3. Optimizando los modelos simples: 
- 4. Modelos complejos: 
+Cuatro fases del desarollo de un modelo de ML: pag. 179
+
+Evaluacion Offline del modelo
+Lo ideal es que los metodos sean los mismos durante el desarollo y la produccion
+ - Baselines: Solas las metricas de evaluacion pueden significar poco es necesario analizar en relacion a la baseline que se esten usando. Los tipos:
+    + Baseline aleatorio: ; + Heristica simple: El modelo siempre predice la clase mas comun ; + Baseline de regla cero: ; + Baseline humano: ; + Soluciones existentes:
+ - Metodos de Evaluacion:
+   En ambientes academicos las personas se acostumbran a usar sus propias tecnicas d de desempenio pero en produccion se busca robustez
+   - Tests de perturbacion: Las entradas con las que se entrena deben ser lo mas parecidas a las de produccion.
+   - Test de Invariancia: Hacer algunos cambios en algunas partes de la entrada no deben resultar en cambios en las salidas. Se puede probar haciendo entradas confidenciales.
+   - Test de expectativa direccional: Algunos cambios SI deben causar cambios predecibles en las salidas.
+   - Calibracion del modelo: Cuantas veces se torna realidad algo que se predice.
+   - Medicion de confianza: 
+   - Evaluacion basada en slicing: El modelo deberia tener el mismos desempenio en todas las sclices. Hay que consideran desempenio globar y por conjunto. Como identificar slices criticas:
+      - Basado en euristica: Usando el conocimiento de la naturaleza de los datos (web y escritorio ej o area geografica)
+      - Analisis de errores: Viendo las clasificaciones inadecuadas
+      - Slice-funder:
+      - y tener en cuenta que necesito tener los datos para rellenar esas slices.
+        - Paradoja de Simpson: Fenomeno en el que una tendencia aparece n varios grupos de datos pero desaparece o se invierte cuando estos son combinados.
+    
+       + Slicing: separar los datos en subconjuntos y observar el desempenio del modelo en cada subconjunto separadamente.
+
+* Gemini said
+En Machine Learning, una baseline (o línea base) es el modelo más simple o el punto de referencia inicial que utilizas para comparar el rendimiento de tus experimentos más complejos.
+
 
 
 
