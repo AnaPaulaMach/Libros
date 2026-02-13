@@ -199,6 +199,29 @@ Ensembles / Conjuntos
      + Boosting: Convierten weak learners en Strong learners. Cada aprendiz en el mismo conjunto de muestras. Se repite y va ponderando datos.
      + Stacking: Se entrena a los aprendices base a paritr de datos de entrenamiento y despues un meta aprendiz combina la salida de los aprendices base.
 
+Control de versionamiento y Monitoramiento de experimento
+ = Monitoreamento de experimentos: Se controla el profeso de los resultados de un experimento. Son muchas las cosas que se pueden monitorear, no solo la velocidad. Algunas de ellas son:
+   - Curva de perdida de cada division de entrenamiento; metricas de desempenio del modelo; logs, predicciones y rotulos; velocidad; metricas de desempenio del sistema (GPU); parametros o hiperparametros del modelo
+ = Control de versionamiento: Se regitra y luego se recrean o comparan. No solo de debe tener un control de version de codigo sino uno de datos tambien
+ = De todas formas por mas que se garanticen esta dos formas los frameworks y el harware utilizado imposbilitan determinismo en los resultados de un experimento.
+ = Debug de ML enb pag. 167. Para evitarlo
+    - Comenzar simple y adicional gradualmente mas componentes: En BERT usar MLM primero y agregar NSP despues.
+    - Sobreajustar un unico lote: Sobreajustar 10 imagenesver si se obtiene un valor cercano al 100%. Si no ocurre esto puede haber problema
+    - Definir un random seed:  Grantiza la consitencia entre diferentes ejecuciones y compartirlo con otras personas.
+
+Entrenamiento distribuido
+    + Paralelismo de Datos: Cada estacion tiene su propia copia de todo el modelo.
+    + Paralelismo de Modelo: Diferentes componentes del modelo sonentrenados en maquinas diferentes. (Paralelismo de Pipeline)
+    + AutoML: 
+     - Es la automatizacion el proceso de encontrar algoritmos de ML para resolver problemas del mundo real.
+     + Soft AutoML: Ajuste de Hipeparametros (parametros dados por usuarios): Ajustara parametros para mejorar modelo: Tener en cuenta que funcion bien para todo el modelo y no solo para una subdivison de entrenamiento. 
+     + Hard AutoML: Busqueda de arquitectura y optimizador aprendido: 
+
+Cuatro fases del desarollo de un modelo de ML:
+ 1. Antes del ML : 
+ 2. Modelos de ML mas simples:
+ 3. Optimizando los modelos simples: 
+ 4. Modelos complejos: 
 
 
 
