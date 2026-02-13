@@ -191,6 +191,13 @@ Elegir el modelo adecuado
      + Evaluar los Pros y Cons: Entender que es lo mas importante (Ej: falsos positivos y falsos negativos; Interpretabilidad)
      + Entender las Suposiciiones del modelo: Cada modelo hace sus suposiciones, lo mejor es entenderla.
 
+Ensembles / Conjuntos
+ - Es un metodo posible en el cual se unen modelos para mejorar el desempenio, en el mismo cada modelo es un base learner. Ej si es para predicciones se considera lo que dicen todos los modelos.
+ - Son los menos preferidos en producciones porque son complejos
+ - Existen tres formas de crear un ensemble:
+     + Bagging (Bootstrap aggregating): Se crea conjuntos de datos diferentes (bootstraps). Util meotods inestables: redes neuronales, clasicficacion, regresion, seleccion de sucomjuntos. Malo para estables k vecinos
+     + Boosting: Convierten weak learners en Strong learners. Cada aprendiz en el mismo conjunto de muestras. Se repite y va ponderando datos.
+     + Stacking: Se entrena a los aprendices base a paritr de datos de entrenamiento y despues un meta aprendiz combina la salida de los aprendices base.
 
 
 
