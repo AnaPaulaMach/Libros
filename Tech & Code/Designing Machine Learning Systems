@@ -242,6 +242,42 @@ Lo ideal es que los metodos sean los mismos durante el desarollo y la produccion
 * Gemini said
 En Machine Learning, una baseline (o línea base) es el modelo más simple o el punto de referencia inicial que utilizas para comparar el rendimiento de tus experimentos más complejos.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7 : Servicio de Prediccion y Deploy del Modelo
+
+ - Prediccion online: seria on demand
+ - Prediccion en lote: se generan periodicamente
+
+   * La prediccion en lote no es siempre mas eficiente que la online. POrque a veces se hacen predicciones sobre usuarios que ni usaran el sitio
+
+Comprension del modelo
+- Hacer mas chico un modelo
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
