@@ -1,0 +1,153 @@
+Autor: Amir Shevat
+
+*********************************************************************************************************************************************************************************************************************************
+
+1 : What Are Bots?
+Ejemplo de que son los bots y explicacion breve. En mi opinion se puede saltear.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2 : Bot Types
+  - Personal Bot: Es como un asistente personal, se comunca directo con un usario. Ej: bot de una app como Facebook
+  - Team Bot: Puede hablar con muchas personas a la vez
+  - Super Bot: Provee muchos servicios, por ejemplo el asistente de google.
+  - Domain-Specific Bot: De una tarea especifica, por ejemplo el de una aerolinea.
+  - Bussines Bot: Resuelve tareas que al usario no le gustan, completar formularios o cosas asi. Hacen el papeleo. Puede interactuar con muchos trabajadores. Ej; Howdy project manager
+  - Consumer Bot: Su porosito es entretener, comunicar, mejorar productividad personal y mucho mas. Pueden tener mas personalidad. Puedes jugar con ellos
+  - Voice Bot:
+  - Text Bot: 
+  - Net New Bot: El bot es un nuevo servicio en si, no es que hay nada detras.
+  - Integration Exposing Legacy Systems: Estan hechos sobre un servicio siempre disponible del cual queremos facilitar extraer info, engagemente, usabilidad. La duda esta en que exponer.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3 : Major Platforms
+  - Facebook Messenger te permite tener bots.
+  - Legacy Bot Platforms
+    - Email: Mandar mails, leer lo que mandaron, responder.
+
+  - Antes de elegir ver: Consumer o Bussines, Features que tendra, Publico, Dispositivo preferido.
+  - Luego de Elegir: Validar con los usarios teniendo un prototipo
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4 : Major Use Cases 
+  - Conversational Commerce: 
+  - Bots for Business:  
+  - Productivity and Coaching:
+  - Alert/Notificacion: Creo que turismocity tiene uno
+  - Bots as Routers Between Human: Conecta al usuario con el servicio humano como Uber.
+  - Customer Service and FAQ Bots: Puede ser para usuarios internos o externos a la organizacion. Suelen ser repeitivos.
+  - Third-Party Integration Bots: Por ejemplo traen info al chat de aplicaciones externas
+  - Games and Entertainment:
+  - Brand Bots: 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5 : Bot Anatomy 
+  - Branding:
+    - Personality: Segun publico, tarea y marca asocicar.
+    - Logos and Icons: Mejora identificacion y se puede personalizar segun publico.
+    - Naming: A veces que sea un nombre lo hace mas humano. O ponerle de nombre lo que hace
+    - Human Intervention: Rutear la converascion a una persona.
+
+  - Artificial Intellingence:
+    - Natural language understanding
+    - Conversation Managmente: Ruteo multi-intencional 
+    - Image recognition:
+    - Prediction: Habilidad de predecir la respuesta correcta
+    - Sentiment analysis: Entender el sentimiento de la conversacion
+
+- Conversation
+    - Onboarding: La introduccion del proposito del bot funcionalidades y como obtener ayuda
+    - Functionality Scripting: Las funciones o flujos
+    - Feedback and error handling:
+    - Help and Support:
+
+- Rich Interactions:
+  - Files: Subir documentos
+  - Audio and Video: Puede enriquecer conversacion
+  - Images, maps and charts: pueden ayudar mas que solo texto
+  - Buttons: toman el control
+  - Templates: Guian al usuario para subir mensajes complejos teninendo plantillas
+  - Links and Formatting: Colores. linkls, cambio de fuentes emojis, reacciones
+  - Persistent menus
+  - Typing indications: De mentira para que el usuario sienta la presencia
+  - Slash commands: Tambien servirian pero siento que son muy de nerd
+  - Webviews
+
+- Context and memory:
+  - Es dificil porque tienen que iinferir contextos, recordar conversacion, recordar detalles de otras conversaciones
+
+- Discovery and installation:
+
+- Engagement methods:
+  - Notifications: Enviarle al usuario nuevas funciones o contenidos siempre contemplando no ser Spammy
+  - User-led bot invocation: Darles ejemplos de cuando usarlo
+  - Subscripcion: Supongo tipo un newsletter
+
+- Monetization
+
+* Definir Core Purpose and Functionality: MUY IMPORTANTE PRIMER PASO
+- Poner pregunta de que puedes Hacer 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6 : Branding, Personality, and Human Involvement
+  - Tomarse el tiempo de definir la Imagen de Marca y como queremos ser percibidos
+  
+  - Branding: 
+    - Visual Branding: Logo (Pensar bien que se quiere tramsitir, Duolingo parece tu amigo vos le hablas a el)
+      Stickers, Imagenes en medio del chat
+      - Naming: 
+        - Funcionalidad: Puede ser descriptivo como statsbot
+        - Brand name: algunas marcas llaman a sus bots por su mismo nombre tipo Lyft lo llama Lyft
+        - Trademarks: No usar otro que ya existe
+        - Fuera del nombre tambien por ejemplo slack es conocido por sus comandos
+
+  - Personality
+    - Entorno: Si es de trabajo o de clientes y que es aceptable en el entorno. Ser chistoso no siempre es posible
+    - Audiencia: Si es conservadora o no
+    - Jobs to be done: que es lo que el usuario quiere hacer
+    - Runtime Variations: 
+    - Locally relevant social acceptance: Cuidado con las palabras a usar
+    - Existing branding:
+    - Values:
+
+- Es importante mantener esa personalidad consistente
+
+- Human Intervention:
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+7 : Artificial Intelligence
+  - Conversation Managment: Que no sea one-shot como Alexa, un bot debe mantener conversacion.
+  - Image recognition / Computer Vision: 
+  - Prediction: AI es buena para reconocer patrones. 
+    - Hay Prediction APIs que analizan los patrones, pueden ser muy utiles para reconocer ordenes de preguntas.
+  - Sentiment Analysis: Te ayuda a ver que tan bueno es el chatbot
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+8 : 
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9 :
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10 : 
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11 : 
