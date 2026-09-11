@@ -7,7 +7,15 @@
 **Topics:** Career ownership, software entropy, and knowledge portfolios
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
+- Habla sobre como comportarse tanto con uno mismo como con los demas
+- Recomienda no dejar ventanas rotas sin atender, si no se puede resolver se anota
+- Involve your users in the Trade-Off: Preguntar si prefieren algo rapido con algunos errores o algo perfecto que demore
+- Generalmente ningun software es perfecto, centrarse en que sea usañe
+- Portfoliio: Invest, buy low sell high
+- Estudiar sobre Critical Thinking
+- Escribir que es lo que queremos comunicar antes de planear que decir
+- Restrict your nonAPI commeting to discuting why somehting is donde,its purpose and its goal. the code alrwad shows how its done
+- Know what you want to say, know your audience, choose your moment, choose a style, make it look good, involve your audience, be a listener, get back to people
 
 ---
 
