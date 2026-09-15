@@ -23,7 +23,9 @@
 **Topics:** Good design, the DRY principle, and orthogonality
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
+- ETC: Easier to change. did the thing i just did make the overall system easier or ahrder to change?
+- Idea: Resumen semana por semana del codigo funciones (esto es una idea mia no algo que dice el libro)
+- DRY: Dont Repeat Yourself.
 
 ---
 
