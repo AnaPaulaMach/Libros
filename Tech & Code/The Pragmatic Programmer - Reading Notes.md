@@ -25,7 +25,13 @@
 ### My Thoughts & Opinions:
 - ETC: Easier to change. did the thing i just did make the overall system easier or ahrder to change?
 - Idea: Resumen semana por semana del codigo funciones (esto es una idea mia no algo que dice el libro)
-- DRY: Dont Repeat Yourself.
+- DRY: Dont Repeat Yourself. No tener cosas repetidas porque quedaran desactualizadas.
+- All services offered by a module should be avialable through a uniform notation
+- Orthogonality: Two or more things are orthogonal if changes in one do not affect any of the others
+- In a well-designed system, the DB code will be orthogonal to the user interface.
+- Diseniar software en capas con distintas abstracciones
+- Also ask yourself how decoupled your design is from changes in real world (Cambios de numeros de celular, ids ,etc)
+- 
 
 ---
 
