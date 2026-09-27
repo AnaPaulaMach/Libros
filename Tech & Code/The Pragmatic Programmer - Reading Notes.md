@@ -31,7 +31,11 @@
 - In a well-designed system, the DB code will be orthogonal to the user interface.
 - Diseniar software en capas con distintas abstracciones
 - Also ask yourself how decoupled your design is from changes in real world (Cambios de numeros de celular, ids ,etc)
-- 
+- Hacer el codigo lo mas reversible posible para poder cambiar de BD; de Web a Mobile;
+- Mantener la arquitecutra Flexible
+- Prototyping generates disposable code. Tracer code is lean but complete, and forms par of the skeleton of the final system
+- Un prototipo puede ser de cualquier cosa que implique riesgo. Algo que no fue probado o que es critico o dudoso.
+- Al final menciono como estimar recursos y tiempo
 
 ---
 
