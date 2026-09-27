@@ -43,7 +43,12 @@
 **Topics:** Plain text, shell games, and version control
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
+- You need to be comfortable beyond the limits imposed by an IDE. (Esto no lo sabian en la universidad(?)
+- Crear alias en Shell para comandos que normalmente usamos por ejemplo update and upgrade
+- Al uso de Tab lo podemos configurar para que cambie segun contexto
+- Preguntarse siempre que hacemos algo repetitivo si hay alguna mejor forma de hacerlo
+- Centrarse en resolver un Bug no en de quien fue la culpa y apagar las defensas del ego
+- 
 
 ---
 
