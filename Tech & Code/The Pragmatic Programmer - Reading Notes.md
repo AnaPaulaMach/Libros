@@ -56,7 +56,9 @@
 **Topics:** Design by contract and assertive programming
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
+- Hacer un contrato sobre que hara y que no hara el Software.  Aclarando Preconditions, Postcondition, Classs invariants
+- Dont eclipse the aplicattion with error handling
+- 
 
 ---
 
@@ -84,7 +86,7 @@ _[Space for your notes as you read...]_
 
 ---
 
-## Chapter 8: Before the Project
+## Chapter 8: Before the Project 
 **Topics:** Requirements and solving impossible puzzles
 
 ### My Thoughts & Opinions:
