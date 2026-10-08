@@ -58,7 +58,9 @@
 ### My Thoughts & Opinions:
 - Hacer un contrato sobre que hara y que no hara el Software.  Aclarando Preconditions, Postcondition, Classs invariants
 - Dont eclipse the aplicattion with error handling
-- 
+- Planificar solo lo que podemos ver no pensar tanto en el futuro sino en el presente
+- The more you have to predict what the future will look like, the more risk you incur
+- Hacer codigo reemplazable, en caso de que no sirva más se va
 
 ---
 
@@ -66,23 +68,53 @@
 **Topics:** Decoupling and configuration
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
-
+- Mantener bajo acoplamiento en el codigo, suena muy a fundamentos pero es algo que no tengo tan presente al programar
+- Un chatbot es eventdriven? Deberiamos hacer graficos como en sistemas 3?
+- Ver mas sobre finite state machines
+  
 ---
 
 ## Chapter 6: Concurrency
 **Topics:** Breaking temporal coupling and shared state
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
-
+- La herencia es acoplamiento ya sea usarla para no escribir codigo o tener tipos de cosa esta mal
+- Alternativas
+  * Interfaces and protocols
+  * Delegation
+  * Mixins and traits
+- You can use activity disgramas to maximize parallelism by identifying activtitirs that could be performef in parallel but arent
 ---
 
 ## Chapter 7: While You Are Coding
 **Topics:** Refactoring and programming by coincidence
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
+- Cuando nos trabamos en codigo tomarnos una pausa. Si luego de eso no encontramos las solucion consultar por fuera
+- Capaz que contando el problema nos viene la solución
+- No escribir codigo sobre cosas que asumimos, probarlo
+- No solo testear codigo, testear lo que asumimos también
+- Para estimar recursos usar big O notation
+
+Notas reescritas por claude:
+
+**Configuración externa**
+- Sacá del código todo lo que sabés que va a cambiar: reglas de validación por entorno, valores impuestos desde afuera (alícuotas de impuestos), detalles de formato por sitio, claves de licencia. Todo eso va a un "balde" de configuración.
+- Si cambia un valor de configuración, no debería hacer falta recompilar.
+- Código dodo: sin configuración externa el código no se adapta, y lo que no se adapta se extingue.
+- Muchas apps cargan la configuración en una estructura global al arrancar. Los autores prefieren envolverla en una API fina, para que el código no dependa de cómo está representada.
+- Configuración como servicio: externa, pero detrás de una API de servicio en vez de un archivo plano o una base. Ventajas: varias apps la comparten con autenticación y control de acceso, los cambios son globales, se mantiene desde una interfaz dedicada y pasa a ser dinámica.
+- Lo dinámico importa en sistemas de alta disponibilidad. Tener que reiniciar para cambiar un parámetro está fuera de época. Con un servicio, los componentes se suscriben a cambios y reciben los valores nuevos.
+
+**Notación Big‑O**
+- O() aproxima cómo crece el costo (tiempo, memoria) con el tamaño n. O(n²) significa que duplicar la entrada cuadruplica el tiempo. Leé la O como "del orden de". Es una cota superior.
+- Un bucle O(n²) simple puede ganarle a un algoritmo O(n log n) complejo con n chico, sobre todo si el segundo tiene un bucle interno caro.
+- Advertencias prácticas: puede parecer lineal con pocos datos y desplomarse con millones de registros cuando el sistema empieza a paginar. Un sort probado solo con claves aleatorias te puede sorprender con entrada ya ordenada. Cubrí esos casos.
+- Si tenés O(n²), buscá una variante divide y vencerás que te lleve a O(n log n).
+- Si no sabés cómo escala, corré el código variando el tamaño de entrada y graficá. Con tres o cuatro puntos ves la forma de la curva.
+
+**Concurrencia (diagrama de actividad)**
+Pasos escritos en serie muchas veces se pueden paralelizar. En el ejemplo del trago: abrir la mezcla, abrir la licuadora y medir el ron son independientes; se sincronizan (barras gruesas) antes de poner la mezcla, el hielo y el ron; después cerrar, licuar, abrir; en paralelo se buscan vasos y sombrillitas; todo converge en "servir".
 
 ---
 
