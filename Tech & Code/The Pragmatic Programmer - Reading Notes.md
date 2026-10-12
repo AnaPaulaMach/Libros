@@ -84,6 +84,7 @@
   * Delegation
   * Mixins and traits
 - You can use activity disgramas to maximize parallelism by identifying activtitirs that could be performef in parallel but arent
+  
 ---
 
 ## Chapter 7: While You Are Coding
@@ -115,6 +116,10 @@ Notas reescritas por claude:
 
 **Concurrencia (diagrama de actividad)**
 Pasos escritos en serie muchas veces se pueden paralelizar. En el ejemplo del trago: abrir la mezcla, abrir la licuadora y medir el ron son independientes; se sincronizan (barras gruesas) antes de poner la mezcla, el hielo y el ron; después cerrar, licuar, abrir; en paralelo se buscan vasos y sombrillitas; todo converge en "servir".
+
+- Refactoring: disciplined technique for restructuring an existing body of code, altering its internal structure withouth changing its external behavior.
+- Cuando refactorizar: Codigo duplicado; Nonorthogonal design; Conocimiento viejo; Features mas usadas; Performance; Tests
+- Es importante hacerlo de forma temprana y frecuente
 
 ---
 
