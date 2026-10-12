@@ -120,6 +120,16 @@ Pasos escritos en serie muchas veces se pueden paralelizar. En el ejemplo del tr
 - Refactoring: disciplined technique for restructuring an existing body of code, altering its internal structure withouth changing its external behavior.
 - Cuando refactorizar: Codigo duplicado; Nonorthogonal design; Conocimiento viejo; Features mas usadas; Performance; Tests
 - Es importante hacerlo de forma temprana y frecuente
+- A Test is the first user of your code
+- Test-Driven Development: Consiste en cada funcion que escribes hacer un test. Cuidar no volvers esclavos y hacer cosas redundantes
+- Testing Against Contract: siento que puede estar relacionado con mi trabajo final donde empece a trabajar sobre un motor LAF que no funcionaba segun lo que indicaban los papers
+- Secutrity Basic Principles
+   * Minimize attack surface area: Los access points donde se puede ingrer, extraer datos o invocar servicios.
+   * Principle of least privilege: Siempre dar el menor privilegio posible como en Unix
+   * Secure defaults: Los valores predefinidos deben ser los mas seguros no los mas convenientes para el usuario
+   * Encrypt sensitive Data: Ver que dice NIST sobre requisitos para manejar contrasenias
+   * Maintain Sceurity Updates:
+-  
 
 ---
 
