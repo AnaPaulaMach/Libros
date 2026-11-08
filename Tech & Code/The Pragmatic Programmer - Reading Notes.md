@@ -146,7 +146,13 @@ Pasos escritos en serie muchas veces se pueden paralelizar. En el ejemplo del tr
 **Topics:** Pragmatic teams and delighting users
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
+- Teams as a whole should not tolerate broken windows, those small imperfections that no one fiexes
+- Encourage everyone to activily monitor the envioronment for changes
+- 
+**Esenciales**
+- Version Control
+- Regression Testing
+- Full Automation
 
 ---
 
