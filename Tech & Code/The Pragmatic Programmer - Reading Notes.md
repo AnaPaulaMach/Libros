@@ -137,7 +137,8 @@ Pasos escritos en serie muchas veces se pueden paralelizar. En el ejemplo del tr
 **Topics:** Requirements and solving impossible puzzles
 
 ### My Thoughts & Opinions:
-_[Space for your notes as you read...]_
+- Our job is to help people undesrtand what they want
+- Mantener un glosario del proyecto, que especifique terminos y vocabularios
 
 ---
 
